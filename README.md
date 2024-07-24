@@ -1,6 +1,76 @@
 ****Forecasting Harga Komoditas di Indonesia****
 
-Proyek ini bertujuan untuk memprediksi harga komoditas tertentu di Indonesia, khususnya beras dan minyak, menggunakan tiga model machine learning yang berbeda: Stacking Regressor, Linear Regressor, dan Random Forest Regressor. Dataset yang digunakan berasal dari Kaggle dan mencakup data harga makanan di Indonesia.
+Dataset berisi data Harga Makanan Global dari World Food Programme yang mencakup makanan seperti jagung, beras, kacang-kacangan, ikan, dan gula untuk 76 negara dan sekitar 1.500 pasar. Data ini mencakup periode sejak tahun 1992 untuk beberapa negara, meskipun banyak negara mulai melaporkan dari tahun 2003 atau setelahnya. Dataset ini digunakan untuk membantu para pengusaha bisnis F&B dalam melakukan perhitungan harga jual seiring dengan kenaikan harga komoditas di Indonesia. menggunakan tiga model machine learning yang berbeda: Stacking Regressor, Linear Regressor, dan Random Forest Regressor.
+
+https://www.kaggle.com/datasets/salehahmedrony/global-food-prices
+
+**Tujuan yang Akan Dicapai**
+
+Memprediksi harga komoditas (contoh beras dan minyak) di Indonesia selama satu tahun ke depan.
+
+Membandingkan kinerja tiga model machine learning yang berbeda: Stacking Regressor, Linear Regressor, dan Random Forest Regressor.
+
+Menentukan model terbaik berdasarkan metrik evaluasi seperti Mean Squared Error (MSE) dan Mean Absolute Error (MAE).
+
+**Model / Alur Penyelesaian**
+
+                   +-----------------------+
+                   |   Data Collection     |
+                   | (Kaggle Dataset)      |
+                   +-----------+-----------+
+                               |
+                               v
+                   +-----------------------+
+                   |  Data Preprocessing   |
+                   | (Cleaning, Formatting)|
+                   +-----------+-----------+
+                               |
+                               v
+               +---------------+----------------+
+               |                                  |
+               v                                  v
+      +-----------------+               +-----------------+
+      |   Model 1:      |               |   Model 2:      |
+      | Linear Regressor|               |RandomForestRegressor|
+      +--------+--------+               +--------+--------+
+               |                                  |
+               v                                  v
+      +--------+--------+               +--------+--------+
+      |  Model 3:       |               | Evaluate Models  |
+      | Stacking Regressor|             | (MSE, MAE)       |
+      +--------+--------+               +--------+--------+
+               |                                  |
+               v                                  v
+      +--------+----------------------------------+
+      |          Select Best Model                |
+      +-------------------------------------------+
+                               |
+                               v
+                   +-----------------------+
+                   |   Price Forecasting   |
+                   | (for next 12 months)  |
+                   +-----------------------+
+                               |
+                               v
+                   +-----------------------+
+                   |   Result Visualization |
+                   | (Graphs, Charts)       |
+                   +-----------------------+
+
+
+Data Collection: Mengumpulkan data dari Kaggle.
+
+Data Preprocessing: Membersihkan dan memformat data.
+
+Modeling: Menggunakan tiga model (Linear Regressor, RandomForestRegressor, dan Stacking Regressor) untuk melatih dan memprediksi harga.
+
+Evaluation: Mengevaluasi kinerja model menggunakan metrik MSE dan MAE.
+
+Selection: Memilih model terbaik berdasarkan hasil evaluasi.
+
+Forecasting: Menggunakan model terbaik untuk memprediksi harga selama 12 bulan ke depan.
+
+Visualization: Menampilkan hasil prediksi dalam bentuk grafik dan diagram.
 
 Model yang Digunakan
 
