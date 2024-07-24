@@ -1,4 +1,4 @@
-****Forecasting Harga Komoditas di Indonesia****
+****Forecasting Harga Komoditas di Indonesia**** Alvino Radyo Danisworo - A11.2022.14600
 
 Dataset berisi data Harga Makanan Global dari World Food Programme yang mencakup makanan seperti jagung, beras, kacang-kacangan, ikan, dan gula untuk 76 negara dan sekitar 1.500 pasar. Data ini mencakup periode sejak tahun 1992 untuk beberapa negara, meskipun banyak negara mulai melaporkan dari tahun 2003 atau setelahnya. Dataset ini digunakan untuk membantu para pengusaha bisnis F&B dalam melakukan perhitungan harga jual seiring dengan kenaikan harga komoditas di Indonesia. menggunakan tiga model machine learning yang berbeda: Stacking Regressor, Linear Regressor, dan Random Forest Regressor.
 
